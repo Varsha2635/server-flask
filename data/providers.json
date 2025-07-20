@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Apollo Hospitals",
+    "type": "Cardiologist",
+    "address": "JublieeHills",
+    "rating": 4.7,
+    //"distance": 2.1,
+    "phone": "040 6907 1200"
+  },
+  {
+    "id": 2,
+    "name": " Lilavati Hospital",
+    "type": "Hospital",
+    "address": "Mumbai",
+    "rating": 4.3,
+    //"distance": 3.5,
+    "phone": "9000012345"
+  }
+]
