@@ -77,7 +77,7 @@ model = joblib.load(open("model/heart_model.pkl", "rb"))
 with open("data/providers.json", "r") as f:
     providers = json.load(f)
 
-@app.route("/api/predict", methods=["POST", "OPTIONS"])
+@app.route("/predict", methods=["POST", "OPTIONS"])
 def predict():
     if request.method == "OPTIONS":
         # Handle CORS preflight request
@@ -115,7 +115,7 @@ def predict():
         "recommendations": generate_recommendations(risk_level)
     })
 
-@app.route("/api/healthcare-providers", methods=["GET"])
+@app.route("/healthcare-providers", methods=["GET"])
 def get_providers():
     return jsonify(providers)
 
